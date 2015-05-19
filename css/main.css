@@ -1,0 +1,27 @@
+html{
+    font-family: 'Droid Sans', 'Droid Serif', sans-serif;
+}
+
+body {
+    background-color: #111;
+    background-image: url("../data/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main_container {
+    background-color: green;
+    width: 50%;
+    min-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_container > .container {
+    background-color: yellow;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
