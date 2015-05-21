@@ -7,6 +7,6 @@ Language: French
 
 $lang = array();
 
-$lang['WELCOME'] = 'Bonjour';
+$lang['welcome'] = 'Bonjour';
 
 ?>

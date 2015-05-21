@@ -56,30 +56,48 @@ include_once 'languages/'.$lang_file;
 
     <!--Stylesheets-->
     <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link href="css/navigation.css" type="text/css" rel="stylesheet" />
 
 </head>
 
 <body>
 
-    <ul>
-        <li><a href="index.php?lang=de">DE</a></li>
-        <li><a href="index.php?lang=fr">FR</a></li>
-        <li><a href="index.php?lang=en">EN</a></li>
+    <ul id="language">
+        <li><a href="?lang=de">DE</a></li>
+        <li><a href="?lang=fr">FR</a></li>
+        <li><a href="?lang=en">EN</a></li>
     </ul>
 
+    <div id="error"></div>
+
     <div class="main_container">
-        <h1><?php echo $lang['WELCOME']; ?></h1>
+
+        <div class="container">
+            <h1><?php echo $lang['welcome']; ?></h1>
+        </div>
 
         <!--Nav Bar-->
-        <div class="container">
-            <ul>
-                <li><button id="test">Test</button></li>
-            </ul>
+        <div id="navbar" class="container">
+            <div id="bbambb">
+                <a href="bbambb.php" class="navigation"><?php echo $lang['bbambb'] ?></a>
+            </div>
+            <div id="rooms">
+                <a href="rooms.php" class="navigation"><?php echo $lang['rooms'] ?></a>
+            </div>
+            <div id="locality">
+                <a href="locality.php" class="navigation"><?php echo $lang['locality'] ?></a>
+            </div>
+            <div id="offers">
+                <a href="offers.php" class="navigation"><?php echo $lang['offers'] ?></a>
+            </div>
+            <div id="reservation">
+                <a href="reservation.php" class="navigation"><?php echo $lang['reservation'] ?></a>
+            </div>
         </div>
 
         <!--Content: Dynamically loaded if a link gets clicked-->
-        <div class="container">
-            <h1><?php echo $lang['WELCOME']; ?></h1>
+        <div id="content" class="container">
+            <h1><?php echo $lang['welcome']; ?></h1>
         </div>
     </div>
 

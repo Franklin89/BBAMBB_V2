@@ -11,6 +11,27 @@ body {
     background-size: cover;
 }
 
+#language {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    list-style-type: none;
+}
+
+#language li {
+    float: left;
+    margin-right: 5px;
+}
+
+#language a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#language a:hover {
+    text-decoration: underline;
+}
+
 .main_container {
     background-color: green;
     width: 50%;
@@ -20,8 +41,13 @@ body {
 }
 
 .main_container > .container {
-    background-color: yellow;
+    background-color: lightgreen;
     width: 92%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+.main_container > .error {
+    background-color: red;
 }

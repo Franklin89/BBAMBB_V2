@@ -1,0 +1,23 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar div{
+    display: inline-block;
+}
+
+#navbar a {
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+#navbar .active {
+    border-bottom: 2px solid #FFFFFF;
+}
