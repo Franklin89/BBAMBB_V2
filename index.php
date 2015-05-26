@@ -48,6 +48,7 @@ include_once 'languages/'.$lang_file;
 <!DOCTYPE html>
 <html>
 <head lang="de-CH">
+
     <meta charset="UTF-8">
     <title>Bed and Breakfast am Bühlberg</title>
 
