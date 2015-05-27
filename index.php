@@ -24,6 +24,8 @@ else
 $lang = 'de';
 }
 
+echo($lang);
+
 switch ($lang) {
   case 'en':
     $lang_file = 'lang.en.php';
