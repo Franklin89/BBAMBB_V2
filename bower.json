@@ -1,0 +1,9 @@
+{
+  "name": "bbambb-v2",
+  "version": "2.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "sticky-kit": "~1.1.2"
+  },
+  "devDependencies": {}
+}
