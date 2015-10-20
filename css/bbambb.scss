@@ -1,0 +1,100 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$navTestBackgroundColor: white;
+
+body {
+  position: relative;
+  background-color: black;
+}
+
+//header {
+//  height: 654px;
+//  background-color: #151517;
+//  position: fixed;
+//  left: 0px;
+//  top: 0px;
+//  width: 100%;
+//  display: block;
+//  overflow: hidden;
+//  z-index: 1;
+//}
+
+.whiteHeader{
+  background-color: white;
+  transition:background-color 0.5s linear;
+}
+
+//header div.img {
+//  overflow: hidden;
+//  position: absolute;
+//  height: 654px;
+//  top: 4px;
+//  left: 0;
+//  width: 100%;
+//  border: 10px
+//  solid #151517;
+//  border-bottom: none; border-top: none;
+//}
+
+//header div.img img {
+//  position: absolute;
+//  left: 50%;
+//  top: 50%;
+//  margin-left: -1000px;
+//  margin-top: -327px;
+//  opacity: 0;
+//}
+
+nav {
+  z-index: 22;
+  opacity:1;
+  transition:opacity 0.5s linear;
+}
+
+.is_stuck {
+  opacity: 0.75;
+  transition:opacity 0.5s linear;
+}
+
+.navbar {
+  height: 140px;
+  border-radius: 0px;
+  background-color: $navTestBackgroundColor;
+  border-color: $navTestBackgroundColor;
+  margin-bottom: 0px;
+  position: relative;
+
+  .container {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+  }
+}
+
+.nav-justified {
+  li {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    a {
+      color: black;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  z-index: 11;
+}
+
+a.anchor {
+  visibility: hidden;
+    display: block;
+    position: relative;
+    top: -140px;
+}
