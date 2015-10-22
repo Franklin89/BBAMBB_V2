@@ -10,48 +10,78 @@ body {
   background-color: black;
 }
 
-//header {
-//  height: 654px;
-//  background-color: #151517;
-//  position: fixed;
-//  left: 0px;
-//  top: 0px;
-//  width: 100%;
-//  display: block;
-//  overflow: hidden;
-//  z-index: 1;
-//}
+header {
+  height: 654px;
+  background-color: #151517;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+
+  div.img {
+    overflow: hidden;
+    position: absolute;
+    height: 654px;
+    left: 0;
+    width: 100%;
+  }
+
+  img {
+    position: absolute;
+    margin-top: -327px;
+  }
+}
 
 .whiteHeader{
   background-color: white;
-  transition:background-color 0.5s linear;
+
+  div.img {
+    display: none;
+  }
 }
 
-//header div.img {
-//  overflow: hidden;
-//  position: absolute;
-//  height: 654px;
-//  top: 4px;
-//  left: 0;
-//  width: 100%;
-//  border: 10px
-//  solid #151517;
-//  border-bottom: none; border-top: none;
-//}
+#logo {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 100px;
 
-//header div.img img {
-//  position: absolute;
-//  left: 50%;
-//  top: 50%;
-//  margin-left: -1000px;
-//  margin-top: -327px;
-//  opacity: 0;
-//}
+  img {
+    margin-top: 0px;
+  }
+}
 
 nav {
   z-index: 22;
   opacity:1;
-  transition:opacity 0.5s linear;
+  //transition:opacity 0.5s linear;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: Bold;
+      color: black;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .is_stuck {

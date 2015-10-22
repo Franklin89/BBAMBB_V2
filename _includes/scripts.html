@@ -1,21 +1,26 @@
 <script type="text/javascript" src="{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/bower_components/sticky-kit/jquery.sticky-kit.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/bower_components/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
+        $(document).ready(function () {
+          // Set the stickiness of the navigation
+          $("#navigation").stick_in_parent()
+                  .on("sticky_kit:stick", function(e) {
+                    $("#header").toggleClass("whiteHeader");
+                  })
+                  .on("sticky_kit:unstick", function(e) {
+                    $("#header").toggleClass("whiteHeader");
+                  });
 
-  // Set the stickiness of the navigation
-  $("#navigation").stick_in_parent()
-    .on("sticky_kit:stick", function(e) {
-      $("#header").toggleClass("whiteHeader");
-    })
-    .on("sticky_kit:unstick", function(e) {
-      $("#header").toggleClass("whiteHeader");
-    });
+          // Init Smooth Scroll
+          smoothScroll.init();
 
-  $('body').scrollspy({ target: '#navigation' });
+          $('body').scrollspy({ target: '#navigation' });
 
-  $('#navigation').on('activate.bs.scrollspy', function () {
-    console.log("test");
-  });
+          $('#navigation').on('activate.bs.scrollspy', function () {
+            console.log("test");
+          });
+        });
 </script>
