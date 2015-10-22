@@ -7,33 +7,30 @@ $navTestBackgroundColor: white;
 
 body {
   position: relative;
-  background-color: black;
 }
 
-header {
-  height: 654px;
-  background-color: #151517;
+#background, #background li {
   position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  z-index: 1;
-
-  div.img {
-    overflow: hidden;
-    position: absolute;
-    height: 654px;
-    left: 0;
-    width: 100%;
-  }
-
-  img {
-    position: absolute;
-    margin-top: -327px;
-  }
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
+#background {
+  margin: 0;
+  padding: 0;
+}
+#background li {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1; }
+
 
 .whiteHeader{
   background-color: white;
@@ -131,4 +128,15 @@ a.anchor {
 
 .row {
   background-color: white;
+}
+
+.site-footer {
+  background-color: white;
+  z-index: 11;
+  position: relative;
+  height: 700px;
+}
+
+header {
+  z-index: 11;
 }
