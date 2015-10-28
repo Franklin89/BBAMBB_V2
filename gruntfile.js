@@ -6,22 +6,33 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        jekyll: {
-          dev: {
-              options : {
-                  src: 'src',
-                  config: 'src/_config.yml',
-                  dest: 'build/dev'
-              }
+
+      clean: {
+        dev: {
+          src: ["build/dev"]
+        },
+        prod: {
+          src: ["build/prod"]
+        }
+      },
+
+      jekyll: {
+        dev: {
+            options : {
+                src: 'src',
+                config: 'src/_config.yml',
+                dest: 'build/dev'
+            }
           },
           prod: {
-              options : {
-                  src: 'src',
-                  config: 'src/_config.yml',
-                  dest: 'build/prod'
-              }
+            options : {
+                src: 'src',
+                config: 'src/_config.yml',
+                dest: 'build/prod'
+            }
           }
         },
+
         htmlhint:{
           dev:{
               src:['build/dev/**/*.html']
@@ -30,10 +41,9 @@ module.exports = function(grunt) {
             src:['build/prod/**/*.html']
           }
         },
+
         bowercopy:{
           options: {
-            // Bower components folder will be removed afterwards
-            clean: false
           },
           // Javascript
           js_dev: {
@@ -73,6 +83,7 @@ module.exports = function(grunt) {
             }
           }
         },
+
         watch: { // for development run 'grunt watch'
             jekyll: {
                 files: ['src/**/**.*'],
@@ -82,8 +93,8 @@ module.exports = function(grunt) {
     });
 
     // taks
-    grunt.registerTask('ci', ['jekyll:dev', 'htmlhint:dev', 'bowercopy:js_dev', 'bowercopy:css_dev']) // Continous Integration Build
-    grunt.registerTask('release', ['jekyll:prod', 'htmlhint:prod', 'bowercopy:js_prod', 'bowercopy:css_prod']) // Production Build
+    grunt.registerTask('ci', ['clean:dev', 'jekyll:dev', 'htmlhint:dev', 'bowercopy:js_dev', 'bowercopy:css_dev']) // Continous Integration Build
+    grunt.registerTask('release', ['clean:prod', 'jekyll:prod', 'htmlhint:prod', 'bowercopy:js_prod', 'bowercopy:css_prod']) // Production Build
 
     grunt.registerTask('default', ['ci']);
     grunt.registerTask('watch', ['ci', 'watch']);
@@ -93,4 +104,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-bowercopy');
     grunt.loadNpmTasks('grunt-htmlhint');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 };
