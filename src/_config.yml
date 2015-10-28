@@ -13,4 +13,4 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-exclude: [bower.json, package.json]
+exclude: [bower.json, package.json, gruntfile.js, node_modules]
