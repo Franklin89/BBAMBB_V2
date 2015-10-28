@@ -5,6 +5,10 @@
 
 $navTestBackgroundColor: white;
 
+html {
+  font-family: 'Droid Sans', 'Droid Serif', sans-serif;
+}
+
 body {
   position: relative;
 }
@@ -32,12 +36,8 @@ body {
   opacity: 1; }
 
 
-.whiteHeader{
-  background-color: white;
-
-  div.img {
+.clearBackground{
     display: none;
-  }
 }
 
 #logo {
