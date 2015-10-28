@@ -5,10 +5,6 @@
 
 $navTestBackgroundColor: white;
 
-html {
-  font-family: 'Droid Sans', 'Droid Serif', sans-serif;
-}
-
 body {
   position: relative;
 }
@@ -33,7 +29,8 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: 1; }
+  opacity: 1;
+}
 
 
 .clearBackground{
@@ -52,10 +49,57 @@ body {
   }
 }
 
-nav {
+#navigation {
   z-index: 22;
-  opacity:1;
+  height: 140px;
+  background-color: $navTestBackgroundColor;
+  border-color: $navTestBackgroundColor;
+  position: relative;
   //transition:opacity 0.5s linear;
+
+  .container {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: Bold;
+      color: black;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#navigationMobile {
+  z-index: 22;
+  height: 40px;
+  background-color: red;
+  border-color: red;
+  position: relative;
+  //transition:opacity 0.5s linear;
+
+  .container {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+  }
 
   ul {
     list-style: none;
@@ -84,33 +128,6 @@ nav {
 .is_stuck {
   opacity: 0.85;
   transition:opacity 0.5s linear;
-}
-
-.navbar {
-  height: 140px;
-  border-radius: 0px;
-  background-color: $navTestBackgroundColor;
-  border-color: $navTestBackgroundColor;
-  margin-bottom: 0px;
-  position: relative;
-
-  .container {
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
-  }
-}
-
-.nav-justified {
-  li {
-    font-size: 19px;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    a {
-      color: black;
-    }
-  }
 }
 
 .container {

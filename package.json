@@ -5,9 +5,11 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bowercopy": "^1.2.3",
+    "grunt-connect": "^0.2.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-ftp-deploy": "^0.1.10",
     "grunt-htmlhint": "^0.9.12",
     "grunt-jekyll": "^0.4.2"
   }
