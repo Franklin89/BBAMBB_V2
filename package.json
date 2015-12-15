@@ -1,7 +1,7 @@
 {
   "name": "bbambb-v2",
   "version": "2.0.0",
-  "author": "ML-Software.ch",
+  "author": "ML-Software",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bowercopy": "^1.2.3",
