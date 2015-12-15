@@ -118,9 +118,9 @@ module.exports = function (grunt) {
     });
 
     // tasks
-    grunt.registerTask('deploy', ['ftp-deploy'])
     grunt.registerTask('ci', ['clean:dev', 'jekyll:dev', 'htmlhint:dev', 'bowercopy:js_dev', 'bowercopy:css_dev']) // Continous Integration Build
     grunt.registerTask('release', ['clean:prod', 'jekyll:prod', 'htmlhint:prod', 'bowercopy:js_prod', 'bowercopy:css_prod']) // Production Build
+    grunt.registerTask('deploy', ['ci', 'ftp-deploy'])
 
     grunt.registerTask('default', ['ci']);
 
