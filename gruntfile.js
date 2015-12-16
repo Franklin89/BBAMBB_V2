@@ -114,7 +114,7 @@ module.exports = function (grunt) {
                     port: 21,
                     authKey: 'key1'
                 },
-                src: 'build/dev',
+                src: 'build/prod',
                 dest: '/html/bbambb',
                 forceVerbose: true
             }
@@ -132,7 +132,7 @@ module.exports = function (grunt) {
     grunt.registerTask('ci', ['clean:dev', 'jekyll:dev', 'htmlhint:dev', 'bowercopy:js_dev', 'bowercopy:css_dev']) // Continous Integration Build
     grunt.registerTask('release', ['clean:prod', 'jekyll:prod', 'htmlhint:prod', 'bowercopy:js_prod', 'bowercopy:css_prod']) // Production Build
     grunt.registerTask('deploy', ['ci', 'ftp-deploy'])
-    grunt.registerTask('deploy-teamcity', ['ci', 'ftp-deploy:teamcity'])
+    grunt.registerTask('deploy-teamcity', ['release', 'ftp-deploy:teamcity'])
 
     grunt.registerTask('default', ['ci']);
 
