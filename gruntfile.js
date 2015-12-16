@@ -111,7 +111,7 @@ module.exports = function (grunt) {
                 auth: {
                     host: 'login-146.hoststar.ch',
                     port: 21,
-                    authPath: 'D:\Development\Private',
+                    authPath: 'D:\Development\Private\.ftppass',
                     authKey: 'key1'
                 },
                 src: 'build/dev',
