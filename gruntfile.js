@@ -108,10 +108,10 @@ module.exports = function (grunt) {
                 forceVerbose: true
             },
             teamcity: {
+                authPath: 'D:\Development\Private\.ftppass',
                 auth: {
                     host: 'login-146.hoststar.ch',
                     port: 21,
-                    authPath: 'D:\Development\Private\.ftppass',
                     authKey: 'key1'
                 },
                 src: 'build/dev',
