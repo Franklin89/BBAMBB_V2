@@ -3,16 +3,16 @@ layout: de-default
 ---
 
 <!--BBAMBB-->
-<div class="row">
+<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
     <a id="bbambb" class="anchor"></a>
     <div class="col-md-12 text-center">
-        <h2 style="font-family:'Droid Serif'; font-style: italic;">Gastieren in 150-Jähriger Geschichte mit modernem Charme.</h2>
+        <h2 class="text_header">Gastieren in 150-Jähriger Geschichte mit modernem Charme.</h2>
     </div>
     <div class="col-md-12 text-center">
-        <h2 style="font-family:'Droid Serif'; font-style: italic">Herzlich Willkommen im Bed and Breakfast am Bühlberg,</h2>
+        <h2 class="text_header">Herzlich Willkommen im Bed and Breakfast am Bühlberg,</h2>
     </div>
     <div class="col-md-12 text-center">
-        <h2 style="font-family:'Droid Serif'; font-style: italic">Gastieren  in 150-Jähriger Geschichte mit modernem Charme.</h2>
+        <h2 class="text_header">in unserem wunderschönen Original-Simmentaler Bauernhaus an der Lenk!</h2>
     </div>
 </div>
 
@@ -22,7 +22,7 @@ layout: de-default
     </div>
 </div>
 
-<div class="row">
+<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
     <div class="col-md-8 col-md-push-2">
         <p>
             Das um 1850 erbaute Haus wurde liebevoll in ein gemütliches Wohn- und Gästehaus umgebaut.
@@ -43,9 +43,8 @@ layout: de-default
 <!--ROOMS-->
 <div class="row" style="background-image: url('{{ "/resources/images/rooms/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
     <a id="rooms" class="anchor"></a>
-<div></div>
     <div class="col-md-8 col-md-push-2 text-center">
-        <h3 style="font-family:'Droid Serif'; font-style: italic;margin-top: 100px">
+        <h3 class="text_header" style="margin-top: 100px">
             Unsere sechs liebevoll eingerichteten Zimmer verfügen
             alle über ein eigenes Bad mit Dusche und WC.
             Besonderen Charme verleiht den individuellen Zimmern die
@@ -56,6 +55,31 @@ layout: de-default
         </h3>
     </div>
 </div>
+<div class="row" style="padding-top: 50px;">
+    <div class="col-md-8 col-md-push-2">
+        <strong style="font-size: 16px;">DOPPELZIMMER</strong>
+    </div>
+</div>
+{% for room in site.rooms %}
+    {% if room.language  == "de" %}
+        {% if room.category  == "double" %}
+            {{ room.output }}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+<div class="row" style="padding-top: 50px;">
+    <div class="col-md-8 col-md-push-2">
+        <strong style="font-size: 16px;">EINZELZIMMER</strong>
+    </div>
+</div>
+{% for room in site.rooms %}
+    {% if room.language  == "de" %}
+        {% if room.category  == "single" %}
+            {{ room.output }}
+        {% endif %}
+    {% endif %}
+{% endfor %}
 
 <!--LOCALITY-->
 <div class="row" style="background-color:blue;height:300px;">

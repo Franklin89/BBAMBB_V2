@@ -5,9 +5,10 @@
 
 // Our variables
 $base-font-family: 'Droid Sans', 'Droid Serif', sans-serif;
-$base-font-size:   16px;
+$base-font-size:   14.5px;
+$large-font-size:  23px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.0;
 
 $spacing-unit:     30px;
 
@@ -46,5 +47,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+"../_sass/bbambb"
 ;
