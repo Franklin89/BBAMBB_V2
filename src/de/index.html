@@ -62,7 +62,7 @@ layout: de-default
 </div>
 {% for room in site.rooms %}
     {% if room.language  == "de" %}
-        {% if room.category  == "double" %}
+        {% if room.type  == "double" %}
             {{ room.output }}
         {% endif %}
     {% endif %}
@@ -75,7 +75,7 @@ layout: de-default
 </div>
 {% for room in site.rooms %}
     {% if room.language  == "de" %}
-        {% if room.category  == "single" %}
+        {% if room.type  == "single" %}
             {{ room.output }}
         {% endif %}
     {% endif %}

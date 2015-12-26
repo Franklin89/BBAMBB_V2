@@ -3,7 +3,7 @@ layout: room
 title: Wildstrubel
 price_on: 95
 price_off: 85
-category: double
+type: double
 language: de
 ---
 Ausrichtung gegen Süden mit Blick ins wunderschöne Wildstrubelmassive und Iffigtal.

@@ -3,7 +3,7 @@ layout: room
 title: Buggeli
 price_on: 95
 price_off: 85
-category: single
+type: single
 language: de
 ---
 Ausrichtung gegen Süden mit Blick ins wunderschöne Wildstrubelmassive und Iffigtal.

@@ -10,7 +10,7 @@ url: "http://localhost:1337" # the base hostname & protocol for your site
 
 collections:
   rooms:
-      output: true
+      output: false
 
 # Build settings
 markdown: kramdown
