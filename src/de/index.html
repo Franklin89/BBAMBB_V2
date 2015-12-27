@@ -31,6 +31,7 @@ layout: de-default
             Laube, sowie unser schöner Garten laden zum Verweilen ein. Für Sportgeräte, wie Skis und Bikes gibt
             es einen Nebenraum mit genügend Platz und Aufbewahrungsmöglichkeiten.
         </p>
+        <br>
         <p>
             Wir, Andrea und Markus, haben unser Märchen wahr werden lassen und möchten Sie nun als Gäste in
             unserem Bed and Breakfast begrüssen. Mit grosser Leidenschaft für Haus und Garten und das Bewirten
@@ -80,6 +81,39 @@ layout: de-default
         {% endif %}
     {% endif %}
 {% endfor %}
+
+<div class="row" style="margin-top: 50px;">
+    <div class=" col-md-8 col-md-push-2">
+        <p>
+            <strong>
+                Preise (Hochsaison / Nebensaison) gelten pro Person und Nacht.<br>
+                inkl. Frühstück, MwSt. und Kurtaxen.<br>
+            </strong>
+            Hochsaison: {{ site.OnSeason }}<br>
+            Nebensaison: {{ site.OffSeason }}
+        </p>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 30px;">
+    <div class=" col-md-8 col-md-push-2">
+        <p>
+            Unser Haus ist für Kinder nicht eingerichtet.<br>
+            Hunde sind in Absprache erlaubt, CHF {{ site.PriceDog }} pro Nacht.
+        </p>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 30px;">
+    <div class=" col-md-8 col-md-push-2">
+        <p>
+            <strong>
+                Bei Einzelbelegung der Doppelzimmer werden zusätzlich bis zu CHF {{ site.ExtraPriceSingleInDouble }} verrechnet.<br>
+                Jedes Zimmer verfügt über Internetanschluss.<br>
+            </strong>
+        </p>
+    </div>
+</div>
 
 <!--LOCALITY-->
 <div class="row" style="background-color:blue;height:300px;">

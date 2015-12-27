@@ -8,6 +8,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:1337" # the base hostname & protocol for your site
 
+OnSeason: ab 27. Dezember 2015 bis 10. April 2016 und ab 06. Juni 2016 bis 16. Oktober 2016
+OffSeason: ab 11. April 2016 bis 05. Juni 2016 und ab 17. Oktober 2016 bis 18. Dezember 2016
+PriceDog: 15
+ExtraPriceSingleInDouble: 30
+
 collections:
   rooms:
       output: false

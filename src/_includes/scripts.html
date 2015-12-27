@@ -8,10 +8,12 @@
           // Set the stickiness of the navigation
           $("#navigation").stick_in_parent()
               .on("sticky_kit:stick", function(e) {
-                  $("#background").toggleClass("clearBackground");
+                  $("#background").addClass("clearBackground");
+                  console.log("Add Class: clearBackground");
               })
               .on("sticky_kit:unstick", function(e) {
-                $("#background").toggleClass("clearBackground");
+                  $("#background").removeClass("clearBackground");
+                  console.log("Remove Class: clearBackground");
               });
 
           // Init Smooth Scroll
