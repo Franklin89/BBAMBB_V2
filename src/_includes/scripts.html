@@ -4,19 +4,46 @@
 <script type="text/javascript" src="{{ "/js/smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
-        $(document).ready(function () {
-          // Set the stickiness of the navigation
-          $("#navigation").stick_in_parent()
-              .on("sticky_kit:stick", function(e) {
-                  $("#background").addClass("clearBackground");
-                  console.log("Add Class: clearBackground");
-              })
-              .on("sticky_kit:unstick", function(e) {
-                  $("#background").removeClass("clearBackground");
-                  console.log("Remove Class: clearBackground");
-              });
 
-          // Init Smooth Scroll
-          smoothScroll.init();
-        });
+    function windowResized(){
+
+        var windowHeight = $( window ).height();
+        console.log("Current Height: " + windowHeight);
+
+        // Set the Height of the backgroundImage
+        var backgroundImage = $("#backgroundImage");
+        if(windowHeight > 640){
+            backgroundImage.height(windowHeight);
+        }
+        else {
+            backgroundImage.height(640);
+        }
+
+        // Set the position of the logo
+        var logo = $("#logo");
+        logo.css("margin-top", ((windowHeight / 2) - (logo.height() / 2)) + "px");
+    }
+
+    $(document).ready(function () {
+
+        //Set the size of the main image
+        windowResized();
+        $( window ).resize(windowResized);
+
+        // Set the stickiness of the navigation
+        $("#navigation").stick_in_parent()
+            .on("sticky_kit:stick", function(e) {
+              $("#background").addClass("clearBackground");
+              console.log("Add Class: clearBackground");
+            })
+            .on("sticky_kit:unstick", function(e) {
+              $("#background").removeClass("clearBackground");
+              console.log("Remove Class: clearBackground");
+            });
+
+        // Init ScrollSpy
+
+        // Init Smooth Scroll
+        smoothScroll.init();
+    });
 </script>
