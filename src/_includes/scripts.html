@@ -2,6 +2,7 @@
 <script type="text/javascript" src="{{ "/js/jquery.sticky-kit.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/js/smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/scrollspy.js" | prepend: site.baseurl }}"></script>
 
 <script type="text/javascript">
 
@@ -42,6 +43,18 @@
             });
 
         // Init ScrollSpy
+        $('.tile').on('scrollSpy:enter', function() {
+            console.log('enter:', $(this).attr('id'));
+        });
+
+        $('.tile').scrollSpy(
+                {
+                    throttle: 100,
+                    offsetTop: 0,
+                    offsetRight: 0,
+                    offsetBottom: -300,
+                    offsetLeft: 0
+                });
 
         // Init Smooth Scroll
         smoothScroll.init();

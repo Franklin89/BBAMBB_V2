@@ -53,7 +53,8 @@ module.exports = function (grunt) {
                     'jquery.min.js': 'jquery/dist/jquery.js',
                     'smooth-scroll.min.js': 'smooth-scroll/dist/js/smooth-scroll.js',
                     'jquery.sticky-kit.min.js': 'sticky-kit/jquery.sticky-kit.js',
-                    'bootstrap.min.js': 'bootstrap/dist/js/bootstrap.js'
+                    'bootstrap.min.js': 'bootstrap/dist/js/bootstrap.js',
+                    'scrollspy.js': 'jscrollspy/scrollspy.js'
                 }
             },
             css_dev: {
@@ -72,7 +73,8 @@ module.exports = function (grunt) {
                     'jquery.min.js': 'jquery/dist/jquery.min.js',
                     'smooth-scroll.min.js': 'smooth-scroll/dist/js/smooth-scroll.min.js',
                     'jquery.sticky-kit.min.js': 'sticky-kit/jquery.sticky-kit.min.js',
-                    'bootstrap.min.js': 'bootstrap/dist/js/bootstrap.min.js'
+                    'bootstrap.min.js': 'bootstrap/dist/js/bootstrap.min.js',
+                    'scrollspy.js': 'jscrollspy/scrollspy.js'
                 }
             },
             css_prod: {
