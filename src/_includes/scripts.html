@@ -43,18 +43,20 @@
             });
 
         // Init ScrollSpy
-        $('.tile').on('scrollSpy:enter', function() {
+        $('.anchor').on('scrollSpy:enter', function() {
             console.log('enter:', $(this).attr('id'));
         });
 
-        $('.tile').scrollSpy(
-                {
-                    throttle: 100,
-                    offsetTop: 0,
-                    offsetRight: 0,
-                    offsetBottom: -300,
-                    offsetLeft: 0
-                });
+        var offset = -($( window ).height());
+        console.log("Offset: " + offset);
+
+        $('.anchor').scrollSpy({
+            throttle: 100,
+            offsetTop: 0,
+            offsetRight: 0,
+            offsetBottom: offset,
+            offsetLeft: 0
+        });
 
         // Init Smooth Scroll
         smoothScroll.init();
