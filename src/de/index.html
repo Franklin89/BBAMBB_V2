@@ -129,17 +129,22 @@ layout: de-default
 </div>
 
 <!--RESERVATION-->
-<div class="row" style="background-color:gray;height:300px;">
+<div class="row" style="background-color:#083216;">
     <a id="reservation" class="anchor"></a>
         <div class="col-md-8 col-md-push-2">
-            <form>
-                <div class="row" style="background-color:green">
+            <div class="row formRow">
+                <div class="col-md-12">
+                    <h3>RESERVATION UND KONTAKT</h3>
+                </div>
+            </div>
+            <form id="reservationForm">
+                <div class="row formRow">
                     <div class="col-md-12">
-                        <input type="radio" name="title" value="mr">Herr
-                        <input type="radio" name="title" value="ms">Frau
+                        <input type="radio" name="title" value="mr"> Herr
+                        <input type="radio" name="title" value="ms"> Frau
                     </div>
                 </div>
-                <div class="row" style="background-color:red">
+                <div class="row formRow">
                     <div class="col-md-6">
                         <input type="text" id="firstname" placeholder="Vorname">
                     </div>
@@ -147,12 +152,12 @@ layout: de-default
                         <input type="text" id="lastname" placeholder="Nachname">
                     </div>
                 </div>
-                <div class="row" style="background-color:green">
+                <div class="row formRow">
                     <div class="col-md-12">
                         <input type="text" id="street" placeholder="Adresse, Nr.">
                     </div>
                 </div>
-                <div class="row" style="background-color:red">
+                <div class="row formRow">
                     <div class="col-md-6">
                         <input type="text" id="zip" placeholder="Plz">
                     </div>
@@ -160,19 +165,51 @@ layout: de-default
                         <input type="text" id="city" placeholder="Stadt">
                     </div>
                 </div>
-                <div class="row" style="background-color:green">
-                    <div class="col-md-12">
+                <div class="row formRow">
+                    <div class="col-md-6">
                         <input type="text" id="country" placeholder="Land">
                     </div>
                 </div>
-                <div class="row" style="background-color:red">
+                <div class="row formRow">
                     <div class="col-md-6">
+                        Anreise <br>
                         <input type="date" id="arrival" placeholder="Anreise">
                     </div>
                     <div class="col-md-6">
+                        Abreise <br>
                         <input type="date" id="departure" placeholder="Abreise">
+                    </div>
+                </div>
+                <div class="row formRow">
+                    <div class="col-md-2">
+                        Doppelzimmer <br>
+                        <input type="checkbox" name="apartmentId" value="482BCB5C-94F4-400B-84D7-512917239417"> Wildstrubel <br>
+                        <input type="checkbox" name="apartmentId" value="D14C40CD-39E1-4718-AB5E-713E90EC0E87"> Länge Egg <br>
+                        <input type="checkbox" name="apartmentId" value="81740335-07BE-457D-B179-A53E70E902CF"> Betelberg
+                    </div>
+                    <div class="col-md-2">
+                        Einzelzimmer <br>
+                        <input type="checkbox" name="apartmentId" value="4D852D20-4D9C-455B-9F41-54332AAFA51D"> Leiterli <br>
+                        <input type="checkbox" name="apartmentId" value="8940C2BC-7174-43B1-A769-84AE14A24D25"> Höji<br>
+                        <input type="checkbox" name="apartmentId" value="BD70A0F0-2A25-4452-9600-9B490D1D00EF"> Buggeli
+                    </div>
+                </div>
+                <div class="row formRow">
+                    <div class="col-md-12">
+                        <textarea id="message" rows="5" placeholder="Mitteilung"></textarea>
+                    </div>
+                </div>
+                <div class="row formRow">
+                    <div class="col-md-12">
+                        <input type="checkbox" id="acceptagb"> Hiermit akzeptiere ich die AGB
+                    </div>
+                </div>
+                <div class="row formRow">
+                    <div class="col-md-12">
+                        <input type="submit" value="Anfrage Senden">
                     </div>
                 </div>
             </form>
         </div>
+    <hr>
 </div>
