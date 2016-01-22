@@ -134,10 +134,24 @@ layout: de-default
         <div class="col-md-8 col-md-push-2">
             <div class="row formRow">
                 <div class="col-md-12">
-                    <h3>RESERVATION UND KONTAKT</h3>
+                    <h3 style="color:white; padding-top:20px;">RESERVATION UND KONTAKT</h3>
                 </div>
             </div>
-            <form id="reservationForm">
+            <div class="row formRow">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div id="sendingRequestLoader" class="row formRow">
+                <div class="col-md-12 text-center">
+                    <div class="throbber-loader">
+                        Sending request...
+                    </div>
+                </div>
+            </div>
+
+            <form id="reservationForm" action="javascript:bookingRequest()">
                 <div class="row formRow">
                     <div class="col-md-12">
                         <input type="radio" name="title" value="mr"> Herr
@@ -153,7 +167,7 @@ layout: de-default
                     </div>
                 </div>
                 <div class="row formRow">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <input type="text" id="street" placeholder="Adresse, Nr.">
                     </div>
                 </div>
@@ -206,10 +220,14 @@ layout: de-default
                 </div>
                 <div class="row formRow">
                     <div class="col-md-12">
-                        <input type="submit" value="Anfrage Senden">
+                        <input type="submit" id="sendRequestButton" value="Anfragen">
                     </div>
                 </div>
             </form>
+            <div class="row formRow">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
         </div>
-    <hr>
 </div>

@@ -54,7 +54,8 @@ module.exports = function (grunt) {
                     'smooth-scroll.min.js': 'smooth-scroll/dist/js/smooth-scroll.js',
                     'jquery.sticky-kit.min.js': 'sticky-kit/jquery.sticky-kit.js',
                     'bootstrap.min.js': 'bootstrap/dist/js/bootstrap.js',
-                    'scrollspy.js': 'jscrollspy/scrollspy.js'
+                    'scrollspy.js': 'jscrollspy/scrollspy.js',
+                    'sweetalert.min.js': 'sweetalert/dist/sweetalert-dev.js'
                 }
             },
             css_dev: {
@@ -62,7 +63,9 @@ module.exports = function (grunt) {
                     destPrefix: 'build/dev/css'
                 },
                 files: {
-                    'bootstrap.min.css': 'bootstrap/dist/css/bootstrap.css'
+                    'bootstrap.min.css': 'bootstrap/dist/css/bootstrap.css',
+                    'sweetalert.css': 'sweetalert/dist/sweetalert.css',
+                    'spinners.css': 'css-spinners/css/spinners.css'
                 }
             },
             js_prod: {
@@ -74,7 +77,8 @@ module.exports = function (grunt) {
                     'smooth-scroll.min.js': 'smooth-scroll/dist/js/smooth-scroll.min.js',
                     'jquery.sticky-kit.min.js': 'sticky-kit/jquery.sticky-kit.min.js',
                     'bootstrap.min.js': 'bootstrap/dist/js/bootstrap.min.js',
-                    'scrollspy.js': 'jscrollspy/scrollspy.js'
+                    'scrollspy.js': 'jscrollspy/scrollspy.js',
+                    'sweetalert.min.js': 'sweetalert/dist/sweetalert.min.js'
                 }
             },
             css_prod: {
@@ -82,7 +86,9 @@ module.exports = function (grunt) {
                     destPrefix: 'build/prod/css'
                 },
                 files: {
-                    'bootstrap.min.css': 'bootstrap/dist/css/bootstrap.min.css'
+                    'bootstrap.min.css': 'bootstrap/dist/css/bootstrap.min.css',
+                    'sweetalert.css': 'sweetalert/dist/sweetalert.css',
+                    'spinners.css': 'css-spinners/css/spinners.css'
                 }
             },
             fonts_dev:{
