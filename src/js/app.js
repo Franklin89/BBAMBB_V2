@@ -1,53 +1,52 @@
 /**
  * Created by Matteo on 22/01/16.
  */
-(function() {
-    function bookingRequest() {
 
-        $("#sendingRequestLoader").show();
-        $("#reservationForm").hide();
+function bookingRequest() {
 
-        var selecedApartments = [];
+    $("#sendingRequestLoader").show();
+    $("#reservationForm").hide();
 
-        $("input:checkbox[name=apartmentId]:checked").each(function (){
-            selecedApartments.push(this.value);
-        });
+    var selecedApartments = [];
 
-        var booking = {
-            Arrival: $("#arrival").val(),
-            Departure: $("#departure").val(),
-            ApartmentIds: selecedApartments,
-            Title: $("input:radio[name=title]:checked").val(),
-            FirstName: $("#firstname").val(),
-            LastName: $("#lastname").val(),
-            Address: $("#address").val(),
-            Zip: $("#zip").val(),
-            City: $("#city").val(),
-            Country: $("#country").val(),
-            Message: $("#message").val()
-        };
+    $("input:checkbox[name=apartmentId]:checked").each(function (){
+        selecedApartments.push(this.value);
+    });
 
-        console.log(JSON.stringify(booking));
+    var booking = {
+        Arrival: $("#arrival").val(),
+        Departure: $("#departure").val(),
+        ApartmentIds: selecedApartments,
+        Title: $("input:radio[name=title]:checked").val(),
+        FirstName: $("#firstname").val(),
+        LastName: $("#lastname").val(),
+        Address: $("#address").val(),
+        Zip: $("#zip").val(),
+        City: $("#city").val(),
+        Country: $("#country").val(),
+        Message: $("#message").val()
+    };
 
-        $.ajax({
-            url: 'https://amswebclient.azurewebsites.net/api/webbooking',
-            type: 'POST',
-            data:JSON.stringify(booking),
-            contentType: "application/json;charset=utf-8",
-            success: function (data) {
-                console.log(data);
-                $("#reservationForm").trigger("reset");
-                $("#sendingRequestLoader").hide();
-                $("#reservationForm").show();
-                swal('Danke...', data, 'success');
-            },
-            error: function (x, y, z) {
-                console.log(x + '\n' + y + '\n' + z);
-                $("#sendingRequestLoader").hide();
-                $("#reservationForm").show();
-                swal('Oops...', x + '\n' + y + '\n' + z, 'error');
-            },
-            timeout: 30000
-        });
-    }
-})();
+    console.log(JSON.stringify(booking));
+
+    $.ajax({
+        url: 'https://amswebclient.azurewebsites.net/api/webbooking',
+        type: 'POST',
+        data:JSON.stringify(booking),
+        contentType: "application/json;charset=utf-8",
+        success: function (data) {
+            console.log(data);
+            $("#reservationForm").trigger("reset");
+            $("#sendingRequestLoader").hide();
+            $("#reservationForm").show();
+            swal('Danke...', data, 'success');
+        },
+        error: function (x, y, z) {
+            console.log(x + '\n' + y + '\n' + z);
+            $("#sendingRequestLoader").hide();
+            $("#reservationForm").show();
+            swal('Oops...', x + '\n' + y + '\n' + z, 'error');
+        },
+        timeout: 30000
+    });
+}
