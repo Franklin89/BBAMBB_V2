@@ -64,6 +64,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'bootstrap.min.css': 'bootstrap/dist/css/bootstrap.css',
+                    'bootstrap-datepicker.min.css': 'bootstrap-datepicker/dist/css/bootstrap-datepicker.css',
                     'sweetalert.css': 'sweetalert/dist/sweetalert.css',
                     'spinners.css': 'css-spinners/css/spinners.css'
                 }
@@ -87,6 +88,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'bootstrap.min.css': 'bootstrap/dist/css/bootstrap.min.css',
+                    'bootstrap-datepicker.min.css': 'bootstrap-datepicker/dist/css/bootstrap-datepicker.css',
                     'sweetalert.css': 'sweetalert/dist/sweetalert.css',
                     'spinners.css': 'css-spinners/css/spinners.css'
                 }

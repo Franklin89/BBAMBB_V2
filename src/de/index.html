@@ -160,10 +160,10 @@ layout: de-default
                 </div>
                 <div class="row formRow">
                     <div class="col-md-6">
-                        <input type="text" id="firstname" placeholder="Vorname">
+                        <input type="text" id="firstname" placeholder="Vorname" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="lastname" placeholder="Nachname">
+                        <input type="text" id="lastname" placeholder="Nachname" required>
                     </div>
                 </div>
                 <div class="row formRow">
@@ -186,12 +186,10 @@ layout: de-default
                 </div>
                 <div class="row formRow">
                     <div class="col-md-6">
-                        Anreise <br>
-                        <input type="date" id="arrival" placeholder="Anreise">
+                        <input type="text" value id="arrival" placeholder="Anreise">
                     </div>
                     <div class="col-md-6">
-                        Abreise <br>
-                        <input type="date" id="departure" placeholder="Abreise">
+                        <input type="text" value id="deprature" placeholder="Abreise">
                     </div>
                 </div>
                 <div class="row formRow">
@@ -215,7 +213,7 @@ layout: de-default
                 </div>
                 <div class="row formRow">
                     <div class="col-md-12">
-                        <input type="checkbox" id="acceptagb"> Hiermit akzeptiere ich die AGB
+                        <input type="checkbox" id="acceptagb" required> Hiermit akzeptiere ich die AGB
                     </div>
                 </div>
                 <div class="row formRow">
