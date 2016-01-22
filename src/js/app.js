@@ -35,6 +35,7 @@ function bookingRequest() {
         contentType: "application/json;charset=utf-8",
         success: function (data) {
             console.log(data);
+            $("#reservationForm").trigger("reset");
             $("#sendingRequestLoader").hide();
             $("#reservationForm").show();
             swal('Danke...', data, 'success');
