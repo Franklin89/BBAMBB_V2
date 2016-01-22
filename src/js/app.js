@@ -45,7 +45,7 @@ function bookingRequest() {
             $("#reservationForm").show();
             swal('Oops...', x + '\n' + y + '\n' + z, 'error');
         },
-        timeout: 3000
+        timeout: 30000
     });
 
 }
