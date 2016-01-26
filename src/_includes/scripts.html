@@ -61,10 +61,10 @@
                 checkout.setValue(newDate);
             }
             checkin.hide();
-            $('#deprature')[0].focus();
+            $('#departure')[0].focus();
         }).data('datepicker');
 
-        var checkout = $('#deprature').datepicker({
+        var checkout = $('#departure').datepicker({
             format: 'dd-mm-yyyy',
             onRender: function(date) {
                 return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
