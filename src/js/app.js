@@ -30,7 +30,7 @@ function bookingRequest() {
     console.log(JSON.stringify(booking));
 
     $.ajax({
-        url: 'https://amswebclient.azurewebsites.net/api/webbooking',
+        url: 'http://tridoo.azurewebsites.net/webbooking',
         type: 'POST',
         data:JSON.stringify(booking),
         contentType: "application/json;charset=utf-8",
