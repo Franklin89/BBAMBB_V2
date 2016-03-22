@@ -1,6 +1,9 @@
 <?php
 
 	//ToDo: Send Email to me
+	//$obj = json_decode($json);
+	//print $obj->{'foo-bar'}; // 12345
+	
 	$subject = 'New Reservation Request from: ';
 
 	$body =
