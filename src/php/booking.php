@@ -1,7 +1,7 @@
 <?php
 
 	//ToDo: Send Email to me
-	$subject = 'New Reservation Request from: ' . $_POST['LastName'];
+	$subject = 'New Reservation Request from: ';
 
 	$body =
 
@@ -10,6 +10,7 @@
 	  <title>Reservation Request</title>
 	</head>
 	<body>
+    ' . $_POST . '
 	</body>
 	</html>';
 

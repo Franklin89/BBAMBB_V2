@@ -30,7 +30,7 @@ function bookingRequest() {
     console.log(JSON.stringify(booking));
 
     $.ajax({
-        url: 'php/booking.php',
+        url: '/php/booking.php',
         type: 'POST',
         data:JSON.stringify(booking),
         contentType: "application/json;charset=utf-8",
