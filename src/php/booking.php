@@ -3,7 +3,7 @@
 	//ToDo: Send Email to me
 	//$obj = json_decode($json);
 	//print $obj->{'foo-bar'}; // 12345
-	
+
 	$subject = 'New Reservation Request from: ';
 
 	$body =
@@ -23,6 +23,10 @@
 	$header .= 'From: Online Reservation <info@ml-software.ch>' . "\r\n";
 
 	// Send email to front desk and dev team
-	mail("matteo.locher@ml-software.ch", $subject, $body, $header);
-
+	$result = mail("matteo.locher@ml-software.ch", $subject, $body, $header);
+	if(!$result) {
+     echo "Error";
+	} else {
+    echo "Success";
+	}
 ?>
