@@ -8,6 +8,13 @@ layout: en-default
 
 <div class="row" style="background-color:green;height:300px;">
     <a id="rooms" class="anchor"></a>
+    {% for room in site.rooms %}
+    {% if room.language  == "en" %}
+        {% if room.type  == "double" %}
+            {{ room.output }}
+        {% endif %}
+    {% endif %}
+{% endfor %}
 </div>
 
 <div class="row" style="background-color:blue;height:300px;">
