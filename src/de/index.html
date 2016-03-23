@@ -3,7 +3,6 @@ layout: de-default
 ---
 
 <!--BBAMBB-->
-<div class="tile">
 <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
     <a id="bbambb" class="anchor"></a>
     <div class="col-md-12 text-center">
@@ -40,10 +39,8 @@ layout: de-default
         </p>
     </div>
 </div>
-</div>
 
 <!--ROOMS-->
-<div class="tile">
 <div class="row" style="background-image: url('{{ "/resources/images/rooms/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
     <a id="rooms" class="anchor"></a>
     <div class="col-md-8 col-md-push-2 text-center">
@@ -84,52 +81,108 @@ layout: de-default
     {% endif %}
 {% endfor %}
 
-<div class="row" style="margin-top: 50px;">
-    <div class=" col-md-8 col-md-push-2">
-        <p>
-            <strong>
-                Preise (Hochsaison / Nebensaison) gelten pro Person und Nacht.<br>
-                inkl. Frühstück, MwSt. und Kurtaxen.<br>
-            </strong>
-            Hochsaison: {{ site.OnSeason }}<br>
-            Nebensaison: {{ site.OffSeason }}
-        </p>
+<div class="row">
+    <div id="roominfo" class="col-md-7 col-md-push-2" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="row">
+            <div>
+                <p>
+                    <strong>
+                        Preise (Hochsaison / Nebensaison) gelten pro Person und Nacht.<br>
+                        inkl. Frühstück, MwSt. und Kurtaxen.<br>
+                    </strong>
+                    Hochsaison: {{ site.OnSeason }}<br>
+                    Nebensaison: {{ site.OffSeason }}
+                </p>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-top: 30px;">
+            <div>
+                <p>
+                    Unser Haus ist für Kinder nicht eingerichtet.<br>
+                    Hunde sind in Absprache erlaubt, CHF {{ site.PriceDog }} pro Nacht.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-top: 30px;">
+            <div>
+                <p>
+                    <strong>
+                        Bei Einzelbelegung der Doppelzimmer werden zusätzlich bis zu CHF {{ site.ExtraPriceSingleInDouble }} verrechnet.<br>
+                        Jedes Zimmer verfügt über Internetanschluss.<br>
+                    </strong>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="row" style="margin-top: 30px;">
-    <div class=" col-md-8 col-md-push-2">
-        <p>
-            Unser Haus ist für Kinder nicht eingerichtet.<br>
-            Hunde sind in Absprache erlaubt, CHF {{ site.PriceDog }} pro Nacht.
-        </p>
+<div class="row">
+    <div class="col-md-8 col-md-push-2 text-center">
+        {% include BBAMBB_Image.html %}
     </div>
-</div>
-
-<div class="row" style="margin-top: 30px;">
-    <div class=" col-md-8 col-md-push-2">
-        <p>
-            <strong>
-                Bei Einzelbelegung der Doppelzimmer werden zusätzlich bis zu CHF {{ site.ExtraPriceSingleInDouble }} verrechnet.<br>
-                Jedes Zimmer verfügt über Internetanschluss.<br>
-            </strong>
-        </p>
-    </div>
-</div>
 </div>
 
 <!--LOCALITY-->
-<div class="row" style="background-color:blue;height:300px;">
+<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
     <a id="locality" class="anchor"></a>
+    <div class="col-md-12 text-center">
+        <h2 class="text_header">Am «länge Egg», einem markanten Nordgrat des Oberlaubhornes und</h2>
+    </div>
+    <div class="col-md-12 text-center">
+        <h2 class="text_header">darum auch «an der Lenk», liegt das Dorf am Fusse des Wildstrubels</h2>
+    </div>
+    <div class="col-md-12 text-center">
+        <h2 class="text_header">auf 1068 m ü. M. und bildet den Abschluss des Simmentals.</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-push-2 text-center">
+        {% include BBAMBB_Image.html %}
+    </div>
+</div>
+
+<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="col-md-8 col-md-push-2">
+        <p>
+            Im Sommer ist Lenk ein Wanderparadies für Naturliebhaber. Ob gemütliche Spaziergänge, anspruchsvolle
+            Wanderrouten oder Biketouren, die Umgebung ist vielseitig und immer wieder neu zu erkunden.
+        </p>
+        <br>
+        <p>
+            Im Winter liegt das Skigebiet Adelboden-Lenk praktisch vor unserer Haustür, der öffentliche Bus wenige
+            Meter vom Haus bringt Sie zur Bühlbergstation, welche auch mit dem Auto erreichbar ist. Wollen Sie es
+            etwas ruhiger angehen, bietet Lenk ausgedehnte Langlauf-Loipen und Winter-Wanderwege.
+        </p>
+        <br>
+        <p>
+            Lenk hat auch kulturell und kulinarisch viel zu bieten, traditionelle Älplerfeste, musikalische Jazz Tage,
+            Unterhaltungsveranstaltungen wie «Das Zelt», Filmspektakel im Dorfkino, Konzerte und eine Vielzahl an
+            hervorragenden Restaurants mit regionalen Spezialitäten. Gerne informieren wir Sie über aktuelle
+            Veranstaltungen während Ihres Aufenthalts bei uns.
+        </p>
+    </div>
 </div>
 
 <!--OFFERS-->
-<div class="row" style="background-color:red;height:300px;">
+<div class="row">
     <a id="offers" class="anchor"></a>
+    <div class="row" style="background-image: url('{{ "/resources/images/offers/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
+    <div class="col-md-8 col-md-push-2 text-center">
+        <h3 class="text_header" style="margin-top: 100px">
+            Selbstgemachtes mit viel Leidenschaft und einer Prise Bergluft.
+            Unsere Köstlichkeiten werden jeden Tag frisch zubereitet.
+            Wir legen wert auf regionale Produkte aus der Umgebung und
+            auf eigens Angebautes aus unserem Garten.
+        </h3>
+    </div>
+    </div>
 </div>
 
 <!--RESERVATION-->
-<div class="row" style="background-color:#083216;">
+<div class="row" style="background-color:#083216; padding-bottom:30px;">
     <a id="reservation" class="anchor"></a>
     <div class="col-md-8 col-md-push-2">
             <div class="row formRow">
@@ -231,7 +284,7 @@ layout: de-default
     <div class="col-md-8 col-md-push-2">
         <div class="row formRow">
             <div class="col-md-6">
-                <div id="googlemaps">
+                <div id="googlemaps" style="height: 400px;">
                     <iframe height="100%" width="100%" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2748.5446881630933!2d7.453101999999998!3d46.45771799999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478efc8d4f33707d%3A0xbf813796c3b82299!2sBed+and+Breakfast+am+B%C3%BChlberg!5e0!3m2!1sde!2sch!4v1420578928759" frameborder="0" style="border:0"></iframe>
                     <!--<iframe height="100%" width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Bühlbergstrasse+108,+3775+Lenk&key=AIzaSyB6v1fXbasuSTBEJj18mH-dr3B6B-nbHeo"></iframe>-->
                 </div>

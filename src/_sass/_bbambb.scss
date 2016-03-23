@@ -263,9 +263,18 @@ textarea {
   border-style: solid;
   padding: 24px;
   border-radius: 20px;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .carousel-inner > .item > img {
     width: 100%;
+}
+
+#roominfo {
+  color: black;
+  border: black;
+  border-style: solid;
+  padding: 24px;
+  border-radius: 20px;
+  border-width: 1px;
 }
