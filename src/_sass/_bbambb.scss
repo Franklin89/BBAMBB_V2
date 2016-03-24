@@ -164,11 +164,16 @@ header {
 }
 
 //Text Styles
+.white {
+  color: white;
+}
+
 .text_header{
   font-family:'Droid Serif';
   font-style: italic;
   font-size: $large-font-size;
   letter-spacing: 2px;
+  line-height: 40px;
 }
 
 .room_name{

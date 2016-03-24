@@ -120,7 +120,7 @@ layout: de-default
 
 <div class="row">
     <div class="col-md-8 col-md-push-2 text-center">
-        {% include BBAMBB_Image.html %}
+        {% include ROOMS_Image.html %}
     </div>
 </div>
 
@@ -140,19 +140,19 @@ layout: de-default
 
 <div class="row">
     <div class="col-md-8 col-md-push-2 text-center">
-        {% include BBAMBB_Image.html %}
+        {% include LOCALITY_Image.html %}
     </div>
 </div>
 
 <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
     <div class="col-md-8 col-md-push-2">
         <p>
-            Im Sommer ist Lenk ein Wanderparadies für Naturliebhaber. Ob gemütliche Spaziergänge, anspruchsvolle
+            Im Sommer ist Lenk ein Wanderparadies für Naturliebhaber. Ob gemütliche Spaziergänge, anspruchsvolle
             Wanderrouten oder Biketouren, die Umgebung ist vielseitig und immer wieder neu zu erkunden.
         </p>
         <br>
         <p>
-            Im Winter liegt das Skigebiet Adelboden-Lenk praktisch vor unserer Haustür, der öffentliche Bus wenige
+            Im Winter liegt das Skigebiet Adelboden-Lenk praktisch vor unserer Haustür, der öffentliche Bus wenige
             Meter vom Haus bringt Sie zur Bühlbergstation, welche auch mit dem Auto erreichbar ist. Wollen Sie es
             etwas ruhiger angehen, bietet Lenk ausgedehnte Langlauf-Loipen und Winter-Wanderwege.
         </p>
@@ -171,13 +171,54 @@ layout: de-default
     <a id="offers" class="anchor"></a>
     <div class="row" style="background-image: url('{{ "/resources/images/offers/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
     <div class="col-md-8 col-md-push-2 text-center">
-        <h3 class="text_header" style="margin-top: 100px">
+        <h3 class="text_header white" style="margin-top: 100px">
             Selbstgemachtes mit viel Leidenschaft und einer Prise Bergluft.
             Unsere Köstlichkeiten werden jeden Tag frisch zubereitet.
             Wir legen wert auf regionale Produkte aus der Umgebung und
             auf eigens Angebautes aus unserem Garten.
         </h3>
     </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-8 col-md-push-2">
+        <h4>KULINARISCHES ANGEBOT</h4>
+        <div>
+            <strong>Im Preis inbegriffen</strong>
+            <p>
+                Unser Frühstücks-Buffet mit Hausgemachtem und regionalen Produkten. Zwischen 8–10 Uhr wird in
+                unserer Scheune aufgetischt. Frischen Tee, Mineralwasser und Obst stellen wir Ihnen auf Wunsch gerne
+                zur Verfügung.
+            </p>
+        </div>
+        <div style="margin-top: 15px">
+            <strong>Weitere Angebote, nicht im Preis inbegriffen</strong>
+            <p>
+                Auf Wunsch und Voranmeldung bis {{ site.DinnerReservationUntil }} Uhr servieren wir Ihnen ein köstliches
+                3-Gang Menu zum Nachtessen (CHF {{ site.DinnerPrice }} pro Person). Eine erlesene Weinkarte erleichtert Ihnen die Auswahl
+                für einen guten Tropfen.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-8 col-md-push-2" style="margin-top: 30px">
+        <h4>SPECIALS FÜR GRUPPEN</h4>
+        <p>
+            Unser Haus eignet sich auch für kleinere Gruppen. Ein geplantes Skiwochenende, Wander- oder Bikeferien
+            unter Freunden, Teamausflüge oder Seminare und Kurse. Wir haben grosszügige Räumlichkeiten,
+            die tagsüber von Gruppen genutzt werden können und unsere Zimmer bieten Platz für max. 9 Personen.
+        </p>
+        <p style="margin-top: 25px">
+            Gerne organisieren wir mit Ihnen und Fachleuten vor Ort Ausflüge und Anlässe, sei es eine Bergtour mit
+            ortskundigem Guide, eine Kreativwoche unter fachlicher Leitung oder ein Angelausflug in der Region.
+            Lassen Sie uns Ihre Ideen wissen und wir stellen ein individuelles Programm für Sie zusammen.
+        </p>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 50px; margin-bottom: 50px">
+    <div class="col-md-8 col-md-push-2 text-center">
+        {% include OFFERS_Image.html %}
     </div>
 </div>
 
