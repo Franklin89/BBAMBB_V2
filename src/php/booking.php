@@ -13,7 +13,7 @@
 	  <title>Reservation Request</title>
 	</head>
 	<body>
-    ' . $_POST . '
+    Guten Tag '. $_POST["title"] . $_POST["lastname"] . $_POST["firstname"] '
 	</body>
 	</html>';
 
