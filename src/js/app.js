@@ -27,12 +27,15 @@ function bookingRequest() {
         Message: $("#message").val()
     };
 
+    console.log("Pure JSON:");
     console.log(JSON.stringify(booking));
+
+    var post_data = "booking=" + JSON.stringify(booking);
 
     $.ajax({
         url: '/php/booking.php',
         type: 'POST',
-        data: booking,
+        data: post_data,
         success: function (data) {
             console.log(data);
             $("#reservationForm").trigger("reset");

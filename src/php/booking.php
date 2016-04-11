@@ -6,16 +6,18 @@
 
 	$subject = 'New Reservation Request from: ';
 
-	$body =
+//	$body =
 
-	'<html>
-	<head>
-	  <title>Reservation Request</title>
-	</head>
-	<body>
-    Guten Tag '. $_POST["Title"] . $_POST["LastName"] . $_POST["FirstName"] '
-	</body>
-	</html>';
+//	'<html>
+//	<head>
+//	  <title>Reservation Request</title>
+//	</head>
+//	<body>
+//    Guten Tag '. $_POST["Title"] . $_POST["LastName"] . $_POST["FirstName"] '
+//	</body>
+//	</html>';
+
+	$body = json_decode($_POST['data'],true);
 
 	$header  = 'MIME-Version: 1.0' . "\r\n";
 	$header .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
@@ -25,8 +27,8 @@
 	// Send email to front desk and dev team
 	$result = mail("matteo.locher@ml-software.ch", $subject, $body, $header);
 	if(!$result) {
-     echo $_POST;
+     echo $body;
 	} else {
-    echo $_POST;
+    echo $body;
 	}
 ?>
