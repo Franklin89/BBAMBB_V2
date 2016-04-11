@@ -30,12 +30,10 @@ function bookingRequest() {
     console.log("Pure JSON:");
     console.log(JSON.stringify(booking));
 
-    var post_data = "booking=" + JSON.stringify(booking);
-
     $.ajax({
         url: '/php/booking.php',
         type: 'POST',
-        data: post_data,
+        data: { data: JSON.stringify(booking) },
         success: function (data) {
             console.log(data);
             $("#reservationForm").trigger("reset");
