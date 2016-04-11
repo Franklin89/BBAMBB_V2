@@ -13,7 +13,7 @@
 	  <title>Reservation Request</title>
 	</head>
 	<body>
-    Guten Tag '. $_POST["title"] . $_POST["lastname"] . $_POST["firstname"] '
+    Guten Tag '. $_POST["Title"] . $_POST["LastName"] . $_POST["FirstName"] '
 	</body>
 	</html>';
 
@@ -25,8 +25,8 @@
 	// Send email to front desk and dev team
 	$result = mail("matteo.locher@ml-software.ch", $subject, $body, $header);
 	if(!$result) {
-     echo "Error";
+     echo $_POST;
 	} else {
-    echo "Success";
+    echo $_POST;
 	}
 ?>
