@@ -17,7 +17,8 @@
 //	</body>
 //	</html>';
 
-	$body = json_decode($_POST['data'],true);
+    $body = $_POST['data'];
+//	$body = json_decode($_POST['data'],true);
 
 	$header  = 'MIME-Version: 1.0' . "\r\n";
 	$header .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
