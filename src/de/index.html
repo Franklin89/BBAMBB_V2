@@ -229,7 +229,7 @@ layout: de-default
                     <h3 style="color:white; padding-top:20px;">RESERVATION UND KONTAKT</h3>
                 </div>
             </div>
-            <div class="row formRow" style="padding-top: 10px; padding-bottom: 30px;">
+            <div class="row formRow" style="padding-bottom: 15  px;">
                 <div class="col-md-12">
                     <hr>
                 </div>
@@ -278,10 +278,20 @@ layout: de-default
                 </div>
                 <div class="row formRow">
                     <div class="col-md-6">
-                        <input type="text" value id="arrival" placeholder="Anreise">
+                        <input type="text" id="birthdate" placeholder="Geburtsdatum">
+                    </div>
+                </div>
+                <div class="row formRow">
+                    <div class="col-md-6">
+                        <input type="text" value id="arrival" placeholder="Anreise" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" value id="departure" placeholder="Abreise">
+                        <input type="text" value id="departure" placeholder="Abreise" required>
+                    </div>
+                </div>
+                <div class="row formRow">
+                    <div class="col-md-6">
+                        <input type="number" min="1" value id="adults" placeholder="Anzahl Personen">
                     </div>
                 </div>
                 <div class="row formRow">

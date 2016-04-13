@@ -50,7 +50,7 @@
         var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 
         var checkin = $('#arrival').datepicker({
-            format: 'dd-mm-yyyy',
+            format: 'dd.mm.yyyy',
             onRender: function(date) {
                 return date.valueOf() < now.valueOf() ? 'disabled' : '';
             }
@@ -65,13 +65,17 @@
         }).data('datepicker');
 
         var checkout = $('#departure').datepicker({
-            format: 'dd-mm-yyyy',
+            format: 'dd.mm.yyyy',
             onRender: function(date) {
                 return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
             }
         }).on('changeDate', function(ev) {
             checkout.hide();
         }).data('datepicker');
+
+        var birthdate = $('#birthdate').datepicker({
+           format: 'dd.mm.yyyy'
+        });
 
         // Init ScrollSpy
         $('.anchor').on('scrollSpy:enter', function() {

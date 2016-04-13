@@ -17,12 +17,14 @@ function bookingRequest() {
         Arrival: $("#arrival").val(),
         Departure: $("#departure").val(),
         ApartmentIds: selecedApartments,
+        NumberOfGuests: $("#adults").val(),
         Title: $("input:radio[name=title]:checked").val(),
         FirstName: $("#firstname").val(),
         LastName: $("#lastname").val(),
         Address: $("#address").val(),
         Zip: $("#zip").val(),
         City: $("#city").val(),
+        Birthdate: $("#birthdate").val(),
         Country: $("#country").val(),
         Message: $("#message").val()
     };
