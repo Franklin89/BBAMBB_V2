@@ -81,8 +81,8 @@ layout: de-default
     {% endif %}
 {% endfor %}
 
-<div class="row">
-    <div id="roominfo" class="col-md-8 col-md-push-2" style="margin-top: 50px; margin-bottom: 50px;">
+<div class="row hidden-xs">
+    <div id="roominfo" class="col-md-6 col-md-push-3 col-sm-10 col-sm-push-1" style="margin-top: 50px; margin-bottom: 50px;">
         <div class="row" style="margin-left: 10px;">
             <div>
                 <p>
@@ -185,7 +185,7 @@ layout: de-default
         <div>
             <strong>Im Preis inbegriffen</strong>
             <p>
-                Unser Frühstücks-Buffet mit Hausgemachtem und regionalen Produkten. Zwischen 8–10 Uhr wird in
+                Unser Frühstücks-Buffet mit Hausgemachtem und regionalen Produkten. Zwischen {{ site.BreakfastTime }} Uhr wird in
                 unserer Scheune aufgetischt. Frischen Tee, Mineralwasser und Obst stellen wir Ihnen auf Wunsch gerne
                 zur Verfügung.
             </p>

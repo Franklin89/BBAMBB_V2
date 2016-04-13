@@ -14,6 +14,7 @@ PriceDog: 15
 ExtraPriceSingleInDouble: 30
 DinnerReservationUntil: 11
 DinnerPrice: 30
+BreakfastTime: 8 - 10
 
 collections:
   rooms:
