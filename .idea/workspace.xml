@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc175a4f-1e41-4539-be5c-1d86d0139087" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_includes/scripts.html" afterPath="$PROJECT_DIR$/src/_includes/scripts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/_sass/_bbambb.scss" afterPath="$PROJECT_DIR$/src/_sass/_bbambb.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/index.html" afterPath="$PROJECT_DIR$/src/de/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
     </list>
     <ignored path="bbambb-v2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/de/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.41291586">
-              <caret line="231" column="64" selection-start-line="231" selection-start-column="64" selection-end-line="231" selection-end-column="64" />
+              <caret line="231" column="62" selection-start-line="231" selection-start-column="62" selection-end-line="231" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
@@ -879,7 +876,7 @@
     <entry file="file://$PROJECT_DIR$/src/de/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41291586">
-          <caret line="231" column="64" selection-start-line="231" selection-start-column="64" selection-end-line="231" selection-end-column="64" />
+          <caret line="231" column="62" selection-start-line="231" selection-start-column="62" selection-end-line="231" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
