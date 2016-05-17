@@ -39,5 +39,5 @@
 	// Send email to front desk and dev team
 	mail("matteo.locher@ml-software.ch", $subject, $body, $header);
 	 
-    echo $body;
+    echo $result;
 ?>
