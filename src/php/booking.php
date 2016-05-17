@@ -24,7 +24,7 @@
 	curl_setopt($curl, CURLOPT_URL, 'https://tridoobackend.azurewebsites.net/api/webbooking');
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
-    curl_exec($curl);
+    $result = curl_exec($curl);
 
     curl_close($curl);
 
@@ -37,10 +37,7 @@
 	$header .= 'From: Online Reservation <info@ml-software.ch>' . "\r\n";
 
 	// Send email to front desk and dev team
-	$result = mail("matteo.locher@ml-software.ch", $subject, $body, $header);
-	if(!$result) {
-     echo $body;
-	} else {
+	mail("matteo.locher@ml-software.ch", $subject, $body, $header);
+	 
     echo $body;
-	}
 ?>
