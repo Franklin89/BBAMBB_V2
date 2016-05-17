@@ -17,6 +17,17 @@
 //	</body>
 //	</html>';
 
+	$curl = curl_init();
+	curl_setopt($curl, CURLOPT_POST, 1);
+	curl_setopt($curl, CURLOPT_POSTFIELDS, $_POST['data']);
+	
+	curl_setopt($curl, CURLOPT_URL, 'https://tridoobackend.azurewebsites.net/api/webbooking');
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+    curl_exec($curl);
+
+    curl_close($curl);
+
     $body = $_POST['data'];
 //	$body = json_decode($_POST['data'],true);
 
