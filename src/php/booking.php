@@ -17,18 +17,19 @@
 //	</body>
 //	</html>';
 
-	$curl = curl_init();
-	curl_setopt($curl, CURLOPT_POST, 1);
-	curl_setopt($curl, CURLOPT_POSTFIELDS, $_POST['data']);
-	
-	curl_setopt($curl, CURLOPT_URL, 'https://tridoobackend.azurewebsites.net/api/webbooking');
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+	$body = $_POST['data'];
 
-    $result = curl_exec($curl);
+	$ch = curl_init('https://tridoobackend.azurewebsites.net/api/webbooking');                                                                      
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $body);                                                                  
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+	curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+		'Content-Type: application/json',                                                                                
+		'Content-Length: ' . strlen($body))                                                                       
+	);                                                                                                                   
 
-    curl_close($curl);
-
-    $body = $_POST['data'];
+	$result = curl_exec($ch);
+    
 //	$body = json_decode($_POST['data'],true);
 
 	$header  = 'MIME-Version: 1.0' . "\r\n";
