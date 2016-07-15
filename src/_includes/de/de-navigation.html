@@ -4,9 +4,9 @@
 
 <nav id="navigation" class="visible-md visible-lg">
     <div class="container">
-        <div id="smallIconImage" class="row" style="text-align: center; margin-bottom: 20px">
+        <!--<div id="smallIconImage" class="row" style="text-align: center; margin-bottom: 20px">
             <img src="/resources/images/logo_small.png" style="width: 60px;"/>
-        </div>
+        </div>-->
         <div class="row">
             <ul class="menu">
                 <li><a data-scroll href="#bbambb">BBAMBB</a></li>
@@ -20,9 +20,16 @@
 </nav>
 
 <nav id="navigationMobile" class="visible-sm visible-xs">
-    <div class="container">
-        <ul class="">
-            <!---ToDo: Mobile Navigation-->
-        </ul>
+    <div class="text-center" style="padding-top: 6px;">
+        <Button class="button-link glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" ></Button>          
+        <div class="collapse" id="collapseMenu">
+            <ul class="menu">    
+                <li><a data-scroll href="#bbambb">BBAMBB</a></li>
+                <li><a data-scroll href="#rooms">ZIMMER</a></li>
+                <li><a data-scroll href="#locality">ORTSCHAFT</a></li>
+                <li><a data-scroll href="#offers">ANGEBOT</a></li>
+                <li><a data-scroll href="#reservation">RESERVATION</a></li>
+            </ul>
+        </div>
     </div>
 </nav>

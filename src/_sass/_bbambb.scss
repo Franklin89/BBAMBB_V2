@@ -1,5 +1,5 @@
 
-$navTestBackgroundColor: white;
+$navBackgroundColor: white;
 
 body {
   position: relative;
@@ -48,15 +48,14 @@ body {
 #navigation {
   z-index: 22;
   height: 140px;
-  background-color: $navTestBackgroundColor;
-  border-color: $navTestBackgroundColor;
+  background-color: $navBackgroundColor;
+  border-color: $navBackgroundColor;
   position: relative;
   //transition:opacity 0.5s linear;
 
   .container {
     position: absolute;
     top: 50%;
-    margin-top: -50px;
   }
 
   ul {
@@ -86,15 +85,13 @@ body {
 #navigationMobile {
   z-index: 22;
   height: 40px;
-  background-color: red;
-  border-color: red;
+  background-color: $navBackgroundColor;
   position: relative;
   //transition:opacity 0.5s linear;
 
-  .container {
-    position: absolute;
-    top: 50%;
-    margin-top: -10px;
+  #collapseMenu {
+    background: $navBackgroundColor;
+    font-family: $base-font-family
   }
 
   ul {
@@ -104,11 +101,6 @@ body {
   }
 
   .menu {
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    justify-content: space-between;
-
     a {
       text-decoration: none;
       font-size: 16px;
