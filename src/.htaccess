@@ -1,10 +1,10 @@
 RewriteEngine on
 
 RewriteCond %{HTTP:Accept-Language} ^de [NC] // Browser language German.
-RewriteRule ^$ http://test.swdev.ch/de       [L,R=301]
+RewriteRule ^$ http://bbambb.swdev.ch/de       [L,R=301]
 
 RewriteCond %{HTTP:Accept-Language} ^fr [NC] // Browser language German.
-RewriteRule ^$ http://test.swdev.ch/fr       [L,R=301]
+RewriteRule ^$ http://bbambb.swdev.ch/fr       [L,R=301]
 
 RewriteCond %{HTTP:Accept-Language} ^en [NC] // Browser language German.
-RewriteRule ^$ http://test.swdev.ch/en       [L,R=301]
+RewriteRule ^$ http://bbambb.swdev.ch/en       [L,R=301]
