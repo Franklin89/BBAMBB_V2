@@ -42,104 +42,105 @@ layout: de-default
 
 <!--ROOMS-->
 <a id="rooms" class="anchor"></a>
-<div class="row hidden-xs" style="background-image: url('{{ "/resources/images/rooms/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
-    
-    <div class="col-md-8 col-md-push-2 text-center">
-        <h3 class="text_header" style="margin-top: 100px">
-            Unsere sechs liebevoll eingerichteten Zimmer verfügen
-            alle über ein eigenes Bad mit Dusche und WC.
-            Besonderen Charme verleiht den individuellen Zimmern die
-            Kombination aus alten stilechten Bauernmöbeln mit
-            modernem Design. Hochwertige Sanitäranlagen und eine
-            schlichte, geschmackvolle Einrichtung bieten Ihnen Erfrischung
-            und Erholung nach einem ereignisreichen Tag.
-        </h3>
+<div class="section">    
+    <div class="row hidden-xs" style="background-image: url('{{ "/resources/images/rooms/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;"> 
+        <div class="col-md-8 col-md-push-2 text-center">
+            <h3 class="text_header" style="margin-top: 100px">
+                Unsere sechs liebevoll eingerichteten Zimmer verfügen
+                alle über ein eigenes Bad mit Dusche und WC.
+                Besonderen Charme verleiht den individuellen Zimmern die
+                Kombination aus alten stilechten Bauernmöbeln mit
+                modernem Design. Hochwertige Sanitäranlagen und eine
+                schlichte, geschmackvolle Einrichtung bieten Ihnen Erfrischung
+                und Erholung nach einem ereignisreichen Tag.
+            </h3>
+        </div>
     </div>
-</div>
-<div class="row" style="padding-top: 50px;">
-    <div class="col-md-8 col-md-push-2">
-        <strong style="font-size: 16px;">DOPPELZIMMER</strong>
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-md-8 col-md-push-2">
+            <strong style="font-size: 16px;">DOPPELZIMMER</strong>
+        </div>
     </div>
-</div>
-{% for room in site.rooms %}
-    {% if room.language  == "de" %}
-        {% if room.type  == "double" %}
-            {{ room.output }}
+    {% for room in site.rooms %}
+        {% if room.language  == "de" %}
+            {% if room.type  == "double" %}
+                {{ room.output }}
+            {% endif %}
         {% endif %}
-    {% endif %}
-{% endfor %}
+    {% endfor %}
 
-<div class="row" style="padding-top: 50px;">
-    <div class="col-md-8 col-md-push-2">
-        <strong style="font-size: 16px;">EINZELZIMMER</strong>
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-md-8 col-md-push-2">
+            <strong style="font-size: 16px;">EINZELZIMMER</strong>
+        </div>
     </div>
-</div>
-{% for room in site.rooms %}
-    {% if room.language  == "de" %}
-        {% if room.type  == "single" %}
-            {{ room.output }}
+    {% for room in site.rooms %}
+        {% if room.language  == "de" %}
+            {% if room.type  == "single" %}
+                {{ room.output }}
+            {% endif %}
         {% endif %}
-    {% endif %}
-{% endfor %}
+    {% endfor %}
 
-<div class="row">
-    <div class="col-md-8 col-md-push-2">
-        <div class="col-md-6">
-            <img src="/resources/images/LST_Label_Sommer_0Sterne.png" class="img-responsive lst-label" alt="...">
-        </div>
-        <div class="col-md-6">
-            <img src="/resources/images/LST_Label_Winter_4Sterne.png" class="img-responsive lst-label" alt="...">
-        </div>
-    </div>
-</div>
-
-<div class="row hidden-xs">
-    <div id="roominfo" class="col-md-6 col-md-push-3 col-sm-10 col-sm-push-1" style="margin-top: 50px; margin-bottom: 50px;">
-        <div class="row" style="margin-left: 10px;">
-            <div>
-                <p>
-                    <strong>
-                        Preise (Hochsaison / Nebensaison) gelten pro Person und Nacht.<br>
-                        inkl. Frühstück, MwSt. und Kurtaxen.<br>
-                    </strong>
-                    Hochsaison: {{ site.OnSeason }}<br>
-                    Nebensaison: {{ site.OffSeason }}
-                </p>
+    <div class="row">
+        <div class="col-md-8 col-md-push-2">
+            <div class="col-md-6">
+                <img src="/resources/images/LST_Label_Sommer_0Sterne.png" class="img-responsive lst-label" alt="...">
             </div>
-        </div>
-
-        <div class="row" style="margin-top: 30px; margin-left: 10px;">
-            <div>
-                <p>
-                    Unser Haus ist für Kinder nicht eingerichtet.<br>
-                    Hunde sind in Absprache erlaubt, CHF {{ site.PriceDog }} pro Nacht.
-                </p>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top: 30px; margin-left: 10px;">
-            <div>
-                <p>
-                    <strong>
-                        Bei Einzelbelegung der Doppelzimmer werden zusätzlich bis zu CHF {{ site.ExtraPriceSingleInDouble }} verrechnet.<br>
-                        Jedes Zimmer verfügt über Internetanschluss.<br>
-                    </strong>
-                </p>
+            <div class="col-md-6">
+                <img src="/resources/images/LST_Label_Winter_4Sterne.png" class="img-responsive lst-label" alt="...">
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-md-8 col-md-push-2 text-center">
-        {% include ROOMS_Image.html %}
+    <div class="row hidden-xs">
+        <div id="roominfo" class="col-md-6 col-md-push-3 col-sm-10 col-sm-push-1" style="margin-top: 50px; margin-bottom: 50px;">
+            <div class="row" style="margin-left: 10px;">
+                <div>
+                    <p>
+                        <strong>
+                            Preise (Hochsaison / Nebensaison) gelten pro Person und Nacht.<br>
+                            inkl. Frühstück, MwSt. und Kurtaxen.<br>
+                        </strong>
+                        Hochsaison: {{ site.OnSeason }}<br>
+                        Nebensaison: {{ site.OffSeason }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px; margin-left: 10px;">
+                <div>
+                    <p>
+                        Unser Haus ist für Kinder nicht eingerichtet.<br>
+                        Hunde sind in Absprache erlaubt, CHF {{ site.PriceDog }} pro Nacht.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px; margin-left: 10px;">
+                <div>
+                    <p>
+                        <strong>
+                            Bei Einzelbelegung der Doppelzimmer werden zusätzlich bis zu CHF {{ site.ExtraPriceSingleInDouble }} verrechnet.<br>
+                            Jedes Zimmer verfügt über Internetanschluss.<br>
+                        </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-push-2 text-center">
+            {% include ROOMS_Image.html %}
+        </div>
     </div>
 </div>
 
 <!--LOCALITY-->
-<div class="hidden-xs">
-    <a id="locality" class="anchor"></a>
-    <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
+<a id="locality" class="anchor"></a>
+<div class="section hidden-xs">
+    <div class="row">
         <div class="col-md-12 text-center">
             <h2 class="text_header">Am «länge Egg», einem markanten Nordgrat des Oberlaubhornes und</h2>
         </div>
@@ -157,7 +158,7 @@ layout: de-default
         </div>
     </div>
 
-    <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="row">
         <div class="col-md-8 col-md-push-2">
             <p>
                 Im Sommer ist Lenk ein Wanderparadies für Naturliebhaber. Ob gemütliche Spaziergänge, anspruchsvolle
