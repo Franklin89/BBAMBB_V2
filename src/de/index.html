@@ -3,8 +3,8 @@ layout: de-default
 ---
 
 <!--BBAMBB-->
+<a id="bbambb" class="anchor"></a>
 <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
-    <a id="bbambb" class="anchor"></a>
     <div class="col-md-12 text-center">
         <h2 class="text_header">Gastieren in 150-Jähriger Geschichte mit modernem Charme.</h2>
     </div>
@@ -41,8 +41,9 @@ layout: de-default
 </div>
 
 <!--ROOMS-->
-<div class="row" style="background-image: url('{{ "/resources/images/rooms/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
-    <a id="rooms" class="anchor"></a>
+<a id="rooms" class="anchor"></a>
+<div class="row hidden-xs" style="background-image: url('{{ "/resources/images/rooms/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
+    
     <div class="col-md-8 col-md-push-2 text-center">
         <h3 class="text_header" style="margin-top: 100px">
             Unsere sechs liebevoll eingerichteten Zimmer verfügen
@@ -80,6 +81,17 @@ layout: de-default
         {% endif %}
     {% endif %}
 {% endfor %}
+
+<div class="row">
+    <div class="col-md-8 col-md-push-2">
+        <div class="col-md-6">
+            <img src="/resources/images/LST_Label_Sommer_0Sterne.png" class="img-responsive lst-label" alt="...">
+        </div>
+        <div class="col-md-6">
+            <img src="/resources/images/LST_Label_Winter_4Sterne.png" class="img-responsive lst-label" alt="...">
+        </div>
+    </div>
+</div>
 
 <div class="row hidden-xs">
     <div id="roominfo" class="col-md-6 col-md-push-3 col-sm-10 col-sm-push-1" style="margin-top: 50px; margin-bottom: 50px;">
@@ -125,50 +137,52 @@ layout: de-default
 </div>
 
 <!--LOCALITY-->
-<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
+<div class="hidden-xs">
     <a id="locality" class="anchor"></a>
-    <div class="col-md-12 text-center">
-        <h2 class="text_header">Am «länge Egg», einem markanten Nordgrat des Oberlaubhornes und</h2>
+    <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="col-md-12 text-center">
+            <h2 class="text_header">Am «länge Egg», einem markanten Nordgrat des Oberlaubhornes und</h2>
+        </div>
+        <div class="col-md-12 text-center">
+            <h2 class="text_header">darum auch «an der Lenk», liegt das Dorf am Fusse des Wildstrubels</h2>
+        </div>
+        <div class="col-md-12 text-center">
+            <h2 class="text_header">auf 1068 m ü. M. und bildet den Abschluss des Simmentals.</h2>
+        </div>
     </div>
-    <div class="col-md-12 text-center">
-        <h2 class="text_header">darum auch «an der Lenk», liegt das Dorf am Fusse des Wildstrubels</h2>
-    </div>
-    <div class="col-md-12 text-center">
-        <h2 class="text_header">auf 1068 m ü. M. und bildet den Abschluss des Simmentals.</h2>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-md-8 col-md-push-2 text-center">
-        {% include LOCALITY_Image.html %}
+    <div class="row">
+        <div class="col-md-8 col-md-push-2 text-center">
+            {% include LOCALITY_Image.html %}
+        </div>
     </div>
-</div>
 
-<div class="row" style="padding-top: 60px; padding-bottom: 60px;">
-    <div class="col-md-8 col-md-push-2">
-        <p>
-            Im Sommer ist Lenk ein Wanderparadies für Naturliebhaber. Ob gemütliche Spaziergänge, anspruchsvolle
-            Wanderrouten oder Biketouren, die Umgebung ist vielseitig und immer wieder neu zu erkunden.
-        </p>
-        <br>
-        <p>
-            Im Winter liegt das Skigebiet Adelboden-Lenk praktisch vor unserer Haustür, der öffentliche Bus wenige
-            Meter vom Haus bringt Sie zur Bühlbergstation, welche auch mit dem Auto erreichbar ist. Wollen Sie es
-            etwas ruhiger angehen, bietet Lenk ausgedehnte Langlauf-Loipen und Winter-Wanderwege.
-        </p>
-        <br>
-        <p>
-            Lenk hat auch kulturell und kulinarisch viel zu bieten, traditionelle Älplerfeste, musikalische Jazz Tage,
-            Unterhaltungsveranstaltungen wie «Das Zelt», Filmspektakel im Dorfkino, Konzerte und eine Vielzahl an
-            hervorragenden Restaurants mit regionalen Spezialitäten. Gerne informieren wir Sie über aktuelle
-            Veranstaltungen während Ihres Aufenthalts bei uns.
-        </p>
+    <div class="row" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="col-md-8 col-md-push-2">
+            <p>
+                Im Sommer ist Lenk ein Wanderparadies für Naturliebhaber. Ob gemütliche Spaziergänge, anspruchsvolle
+                Wanderrouten oder Biketouren, die Umgebung ist vielseitig und immer wieder neu zu erkunden.
+            </p>
+            <br>
+            <p>
+                Im Winter liegt das Skigebiet Adelboden-Lenk praktisch vor unserer Haustür, der öffentliche Bus wenige
+                Meter vom Haus bringt Sie zur Bühlbergstation, welche auch mit dem Auto erreichbar ist. Wollen Sie es
+                etwas ruhiger angehen, bietet Lenk ausgedehnte Langlauf-Loipen und Winter-Wanderwege.
+            </p>
+            <br>
+            <p>
+                Lenk hat auch kulturell und kulinarisch viel zu bieten, traditionelle Älplerfeste, musikalische Jazz Tage,
+                Unterhaltungsveranstaltungen wie «Das Zelt», Filmspektakel im Dorfkino, Konzerte und eine Vielzahl an
+                hervorragenden Restaurants mit regionalen Spezialitäten. Gerne informieren wir Sie über aktuelle
+                Veranstaltungen während Ihres Aufenthalts bei uns.
+            </p>
+        </div>
     </div>
 </div>
 
 <!--OFFERS-->
-<div class="row" style="background-image: url('{{ "/resources/images/offers/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;">
-    <a id="offers" class="anchor"></a>
+<a id="offers" class="anchor"></a>
+<div class="row" style="background-image: url('{{ "/resources/images/offers/header.jpg" | prepend: site.baseurl }}');background-position:center center;background-size:cover;height: 680px;"> 
     <div class="col-md-8 col-md-push-2 text-center">
         <h3 class="text_header white" style="margin-top: 100px">
           Selbstgemachtes mit viel Leidenschaft und einer Prise Bergluft.
@@ -226,8 +240,8 @@ layout: de-default
 </div>
 
 <!--RESERVATION-->
+<a id="reservation" class="anchor"></a>
 <div class="row" style="background-color:#083216; padding-bottom:30px;">
-    <a id="reservation" class="anchor"></a>
     <div class="col-md-8 col-md-push-2">
             <div class="row formRow">
                 <div class="col-md-12">
