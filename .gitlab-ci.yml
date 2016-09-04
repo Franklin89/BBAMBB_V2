@@ -7,8 +7,8 @@ build:
   - apt-get install -y node
   - apt-get install -y npm
   - npm install
-  - npm install -g grunt
   - npm install -g grunt-cli
+  - npm install -g grunt
   - npm install -g bower
   - bower install --allow-root
   - gem install jekyll
