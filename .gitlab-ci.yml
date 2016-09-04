@@ -11,5 +11,3 @@ build:
   - npm install -g bower
   - gem install jekyll
   - grunt
-  except:
-  - master
