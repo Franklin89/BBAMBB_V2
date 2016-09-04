@@ -1,0 +1,26 @@
+image: ruby:2.3
+
+build:
+  stage: build
+  script:
+  - apt-get update
+  - apt-get install -y node
+  - npm install
+  - npm install -g grunt
+  - npm install -g grunt-cli
+  - npm install -g bower
+  - gem install jekyll
+  - grunt
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - gem install jekyll
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
