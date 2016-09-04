@@ -19,6 +19,8 @@ cache:
   - bower_components/
   
 build:
+    stage:
+     - build
     script:
      - npm install
      - npm install -g bower
