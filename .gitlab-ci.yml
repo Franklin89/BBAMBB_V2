@@ -16,20 +16,13 @@ image: node:latest
 cache:
   paths:
   - node_modules/
+  - bower_components/
   
 build:
     script:
      - npm install
      - npm install -g bower
-     - npm install grunt-cli
+     - npm install -g grunt
+     - npm install -g grunt-cli
+     - bower install --Allow-Root
      - grunt
-
-#test_async:
-#  script:
-#   - npm install
-#   - node ./specs/start.js ./specs/async.spec.js
-
-#test_db:
-#  script:
-#   - npm install
-#   - node ./specs/start.js ./specs/db-postgres.spec.js
