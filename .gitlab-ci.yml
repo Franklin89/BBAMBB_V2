@@ -13,5 +13,5 @@ build:
   - npm install -g grunt
   - npm install -g bower
   - gem install jekyll
-  - bower install --allow-root
+  #- bower install --allow-root
   - grunt
