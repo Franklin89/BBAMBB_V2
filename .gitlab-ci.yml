@@ -6,7 +6,8 @@ build:
   - apt-get update
   - apt-get install -y nodejs
   - apt-get install -y npm
-  - apt-get install -y ruby
+  - apt-get install -y ruby2.0
+  - apt-get install -y ruby2.0-dev
   - npm install
   - npm install -g grunt-cli
   - npm install -g grunt
